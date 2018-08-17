@@ -1,0 +1,50 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.side {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 100px;
+  background-color: #ff00ff;
+}
+
+.row {
+  border-bottom: 1px solid #ffffff;
+  min-height: 700px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rowcontainer {
+  position: absolute;
+  clip: rect(1px auto auto 1px); /* IE4 to IE7 */
+  clip: rect(1px, auto, auto, 1px); /* IE8+ & other browsers */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .rowcontainer {
+    clip: auto;
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  }
+}
