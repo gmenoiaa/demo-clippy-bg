@@ -15,18 +15,13 @@ body {
   right: 0;
   width: 300px;
   height: 100px;
-  background-color: #ff00ff;
 }
 
 .row {
-  border-bottom: 1px solid #ffffff;
-  min-height: 700px;
-  height: 700px;
+  min-height: 100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .rowcontainer {
@@ -40,6 +35,10 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  margin: 10vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
